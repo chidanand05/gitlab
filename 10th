@@ -5,9 +5,8 @@ cd GitLab10
 git init
 
 git config --global user.name "JohnDoe"
-git config --global user.email "johndoe@gmail.com"
 
-touch file1.txt
+git config --global user.email "johndoe@gmail.com"
 
 echo "Hello Git" > file1.txt
 
@@ -22,18 +21,6 @@ git commit -m "Second Commit"
 echo "Third Line" >> file1.txt
 git add .
 git commit -m "Third Commit"
-
-echo "Fourth Line" >> file1.txt
-git add .
-git commit -m "Fourth Commit"
-
-echo "Fifth Line" >> file1.txt
-git add .
-git commit -m "Fifth Commit"
-
-echo "Sixth Line" >> file1.txt
-git add .
-git commit -m "Sixth Commit"
 
 git log -5
 

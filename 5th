@@ -4,22 +4,24 @@ cd GitLab5
 
 git init
 
-touch file1.txt
-
 echo "Hello Git" > file1.txt
 
 git add .
 
-git commit -m "Initial Commit"
+git commit -m "First Commit"
 
-git checkout -b feature-branch
+git checkout -b feature1
 
 echo "New Line Added" >> file1.txt
 
 git stash
 
+git stash list
+
 git checkout main
 
-git checkout feature-branch
+git checkout feature1
 
 git stash pop
+
+cat file1.txt

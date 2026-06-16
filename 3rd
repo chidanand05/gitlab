@@ -2,9 +2,9 @@ mkdir GitLab3
 
 cd GitLab3
 
-git clone https://github.com/username/repository-name.git
+git clone https://github.com/username/GitLab3.git
 
-cd repository-name
+cd GitLab3
 
 git status
 

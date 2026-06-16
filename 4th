@@ -4,33 +4,28 @@ cd GitLab4
 
 git init
 
-touch file1.txt
-
 echo "Hello Git" > file1.txt
 
 git add .
 
-git commit -m "Initial Commit"
+git commit -m "First Commit"
 
-git checkout -b feature-login
+git branch feature1
 
-echo "Login Feature" >> file1.txt
+git checkout feature1
+
+echo "Feature Added" >> file1.txt
 
 git add .
 
-git commit -m "Added Login"
+git commit -m "Added Feature"
 
 git checkout main
 
-git merge feature-login
+git merge feature1
 
-git checkout -b feature-payment
-
-echo "Payment" >> file1.txt
-
-git add .
-
-git commit -m "Added Payment"
+git checkout feature1
 
 git rebase main
 
+git log --oneline

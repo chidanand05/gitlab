@@ -4,44 +4,30 @@ cd GitLab9
 
 git init
 
-git config --global user.name "Your Name"
-
-git config --global user.email "yourmail@example.com"
-
-touch file1.txt
-
 echo "Hello Git" > file1.txt
 
 git add .
 
-git commit -m "Initial Commit"
+git commit -m "First Commit"
 
 git checkout -b source-branch
 
 echo "First Change" >> file1.txt
-
 git add .
-
 git commit -m "Commit 1"
 
 echo "Second Change" >> file1.txt
-
 git add .
-
 git commit -m "Commit 2"
 
 echo "Third Change" >> file1.txt
-
 git add .
-
 git commit -m "Commit 3"
 
 git log --oneline
 
 git checkout main
 
-# Replace the commit hashes below with the ones shown by git log
-
-git cherry-pick <start-commit-hash>^..<end-commit-hash>
+git cherry-pick <start-commit>^..<end-commit>
 
 git log --oneline

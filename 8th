@@ -4,31 +4,29 @@ cd GitLab8
 
 git init
 
-touch file1.txt
-
 echo "Hello Git" > file1.txt
 
 git add .
 
 git commit -m "First Commit"
 
-echo "Line 2" >> file1.txt
+echo "Second Line" >> file1.txt
 git add .
 git commit -m "Second Commit"
 
-echo "Line 3" >> file1.txt
+echo "Third Line" >> file1.txt
 git add .
 git commit -m "Third Commit"
 
-echo "Line 4" >> file1.txt
+echo "Fourth Line" >> file1.txt
 git add .
 git commit -m "Fourth Commit"
 
-echo "Line 5" >> file1.txt
+echo "Fifth Line" >> file1.txt
 git add .
 git commit -m "Fifth Commit"
 
-echo "Line 6" >> file1.txt
+echo "Sixth Line" >> file1.txt
 git add .
 git commit -m "Sixth Commit"
 

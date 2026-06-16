@@ -1,8 +1,8 @@
+mkdir GitLab2
+
 cd GitLab2
 
 git init
-
-touch file1.txt
 
 echo "Hello GitHub" > file1.txt
 
@@ -11,6 +11,8 @@ git add .
 git commit -m "Initial Commit"
 
 git remote add origin https://github.com/username/GitLab2.git
+
+git branch -M main
 
 git push -u origin main
 

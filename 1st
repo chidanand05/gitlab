@@ -1,21 +1,13 @@
 mkdir GitLab1
 cd GitLab1
 git init
-
-touch myfile.txt
-
+echo "Hello Git" > myfile.txt
 git status
-
 git add .
-
 git commit -m "First Commit"
-
-git log --oneline
-
-echo "Hello Git" >> myfile.txt
-
+git log
+echo "Welcome to Git" >> myfile.txt
+git status
 git add .
-
-git commit -m "Updated File"
-
+git commit -m "Updated myfile.txt"
 git log --oneline
