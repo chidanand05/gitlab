@@ -1,0 +1,25 @@
+mkdir GitLab5
+
+cd GitLab5
+
+git init
+
+touch file1.txt
+
+echo "Hello Git" > file1.txt
+
+git add .
+
+git commit -m "Initial Commit"
+
+git checkout -b feature-branch
+
+echo "New Line Added" >> file1.txt
+
+git stash
+
+git checkout main
+
+git checkout feature-branch
+
+git stash pop

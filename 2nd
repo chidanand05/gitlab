@@ -1,0 +1,23 @@
+cd GitLab2
+
+git init
+
+touch file1.txt
+
+echo "Hello GitHub" > file1.txt
+
+git add .
+
+git commit -m "Initial Commit"
+
+git remote add origin https://github.com/username/GitLab2.git
+
+git push -u origin main
+
+To clone:---------------------------------
+
+git clone https://github.com/username/GitLab2.git
+
+cd GitLab2
+
+git remote -v

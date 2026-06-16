@@ -1,0 +1,31 @@
+mkdir GitLab7
+
+cd GitLab7
+
+git init
+
+touch file1.txt
+
+echo "Hello Git" > file1.txt
+
+git add .
+
+git commit -m "Initial Commit"
+
+echo "Work in Progress" >> file1.txt
+
+git stash
+
+git stash pop
+
+git rebase -i HEAD~3
+
+git tag v1.0
+
+git tag -a v2.0 -m "Version 2"
+
+git log --oneline
+
+git reset --hard HEAD~1
+
+git revert HEAD
